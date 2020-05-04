@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest 
+	Version="6.0" 
+	ExtensionBundleId="com.rorohiko.sparker" 
+	ExtensionBundleVersion="1.0.0"
+	ExtensionBundleName="Rorohiko Script Runner" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ExtensionList>
+		<Extension Id="com.rorohiko.sparker.scriptrunner" Version="1.0.0" />
+	</ExtensionList>
+	<ExecutionEnvironment>
+		<HostList>
+			<Host Name="IDSN" Version="[11,99)" />
+			<Host Name="AICY" Version="[11,99)" />
+			<Host Name="PHSP" Version="[16,99)" />
+			<Host Name="PHXS" Version="[16,99)" />
+			<Host Name="ILST" Version="[19,99)" />
+			<Host Name="PPRO" Version="[9,99)" />
+			<Host Name="AEFT" Version="[13.5,99)" />
+			<Host Name="PRLD" Version="[2,99)" />
+			<Host Name="FLPR" Version="[13,99)" />
+			<Host Name="DRWV" Version="[16,99)" />
+			<Host Name="KBRG" Version="[7.0,99)" />
+			<Host Name="IDSN" Version="[11,99)" />
+		</HostList>
+		<LocaleList>
+			<Locale Code="All" />
+		</LocaleList>
+		<RequiredRuntimeList>		
+			<RequiredRuntime Name="CSXS" Version="6.0" />
+		</RequiredRuntimeList>
+	</ExecutionEnvironment>
+	<DispatchInfoList>
+		<Extension Id="com.rorohiko.sparker.scriptrunner">
+			<DispatchInfo>
+				<Resources>
+					<MainPath>./html/index.html</MainPath>
+					<ScriptPath>./jsx/hostscript.jsx</ScriptPath>		
+					<CEFCommandLine>
+						<Parameter>--allow-file-access</Parameter>
+						<Parameter>--allow-file-access-from-files</Parameter>
+						<Parameter>--enable-nodejs</Parameter>
+						<Parameter>--mixed-context</Parameter>
+					</CEFCommandLine>
+				</Resources>
+				<Lifecycle>
+					<AutoVisible>true</AutoVisible>
+				</Lifecycle>
+				<UI>
+					<Type>Panel</Type>
+					<Menu>Rorohiko Script Runner</Menu>
+					<Geometry>
+						<Size>
+							<Height>200</Height>
+							<Width>570</Width>
+						</Size>
+						<MinSize>
+							<Height>200</Height>
+							<Width>570</Width>
+						</MinSize>
+						<MaxSize>
+							<Height>200</Height>
+							<Width>570</Width>
+						</MaxSize>
+					</Geometry>
+				</UI>
+			</DispatchInfo>
+		</Extension>
+	</DispatchInfoList>
+</ExtensionManifest>

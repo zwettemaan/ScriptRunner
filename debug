@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionList>
+    <Extension Id="com.rorohiko.sparker.scriptrunner">
+        <HostList>          
+		<!-- 
+			Enable and change as needed 
+		-->
+			<Host Name="IDSN" Port="8889" />
+		<!--
+			<Host Name="AICY" Port="8889" />
+
+			<Host Name="PHSP" Port="8890" />
+			<Host Name="PHXS" Port="8890" />
+
+			<Host Name="ILST" Port="8891" />
+			<Host Name="PPRO" Port="8892" />
+			<Host Name="AEFT" Port="8893" />
+			<Host Name="PRLD" Port="8894" />
+			<Host Name="FLPR" Port="8895" />
+			<Host Name="DRWV" Port="8896" />
+			<Host Name="KBRG" Port="8897" />
+		-->
+ 		</HostList>
+    </Extension>
+</ExtensionList>

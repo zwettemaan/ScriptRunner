@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+<link rel="stylesheet" href="../js/bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="../css/jquery-ui.min.css" />
+<link rel="stylesheet" href="../css/topcoat-desktop-dark.css"/>
+<link rel="stylesheet" href="../css/panel.css"/>
+
+
+    <script src="../js/CSInterface.js"></script>
+
+    <script src="../js/promiscuous/promiscuous-browser.js"></script>
+
+    <script type="text/javascript">
+        window.nodeRequire = window.require || function () {}; 
+        window.nodeModule = window.module; 
+        delete window.module; 
+        window.nodeGlobal = window.global; 
+        delete window.global;
+    </script>
+    <script src="../js/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="../js/jQuery/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        window.module = window.nodeModule; 
+        window.global = window.nodeGlobal;
+    </script>
+
+    <script src="../js/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="../js/themeManager.js"></script>
+
+    <script src="../shared_js_jsx/globals.js"></script>
+    <script src="../shared_js_jsx/tweakableSettings.js"></script>
+
+    <script src="../shared_js_jsx/utils.js"></script>
+    <script src="../js/utils.js"></script>
+
+    <script src="../shared_js_jsx/pathUtils.js"></script>
+    <script src="../js/pathUtils.js"></script>
+    
+    <script src="../shared_js_jsx/init.js"></script>
+    <script src="../js/init.js"></script>
+
+
+</head>
+
+<body id="RoRubody">
+   <div id="RoRupanel" class="RoRupanel">
+    <div id="RoRulistPanel" class="RoRufullwidth">
+
+        <div class="RoRufullwidth">
+            <select id="RoRulist" class="RoRufullwidth"></select>
+        </div>
+        <div class="RoRufullwidth">
+            <button id="RoRubtnRunSelected" class="RoRuactionButton">Run</button>
+        </div>
+
+    </div>
+    <div id="RoRuimmediatePanel" class="RoRufullwidth RoRuhidden">
+
+        <style>
+            #RoRutxtReturnData {
+                font-family: monospace;
+                width: 100%;
+                height: 150px;
+            }
+            #RoRutxtScript {
+                font-family: monospace;
+                width: 100%;
+                height: 150px;
+            }
+        </style>
+
+        <p>Script To Run:</p>
+        <textarea id="RoRutxtScript" ></textarea>
+        <button id="RoRubtnRun" class="RoRuactionButton">Run</button>
+
+        <p>Returned data:</p>
+        <textarea id="RoRutxtReturnData" disabled ></textarea>  
+        
+    </div>
+
+    </div>
+</body>
+
+</html>
