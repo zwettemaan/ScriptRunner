@@ -1,6 +1,9 @@
 # ScriptRunner
+
 A scripts panel for Adobe Creative Cloud apps that don't have a scripts panel, 
 e.g. Premiere Pro.
+
+The ZXP file can be found in the Release folder.
 
 This panel is very rudimentary. It will look for a folder below your Documents folder.
 ```
