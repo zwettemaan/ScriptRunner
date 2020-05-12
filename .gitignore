@@ -5,3 +5,5 @@ certinfo.bat
 ZXPSignCmd
 ZXPSignCmd-64bit.dmg
 ZXPSignCmd.exe
+/build
+/LocalLinks

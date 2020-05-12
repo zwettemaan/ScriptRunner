@@ -6,7 +6,7 @@
 	ExtensionBundleName="Rorohiko Script Runner" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ExtensionList>
-		<Extension Id="com.rorohiko.sparker.scriptrunner" Version="1.0.0" />
+		<Extension Id="com.rorohiko.sparker.scriptrunner" Version="1.0.1" />
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
