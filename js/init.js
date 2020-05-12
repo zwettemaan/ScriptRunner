@@ -192,7 +192,34 @@ function initHostScript_PRM() {
     // Function mapAppId(): convert short app code to readable app name 
     // Auto-generated from appMap.json data
 
-    function mapAppId(appId) {var retVal;switch (appId) {case "KBRG":retVal = "Bridge";break;case "DRWV":retVal = "Dreamweaver";break;case "AICY":retVal = "InCopy";break;case "IDSN":retVal = "InDesign";break;case "ILST":retVal = "Illustrator";break;case "PHSH":retVal = "Photoshop";break;case "PPRO":retVal = "Premiere Pro";break;}return retVal;}
+    function mapAppId(appId) {
+        var retVal;
+        switch (appId) {
+            case "KBRG":
+                retVal = "Bridge";
+                break;
+            case "DRWV":
+                retVal = "Dreamweaver";
+                break;
+            case "AICY":
+                retVal = "InCopy";
+                break;
+            case "IDSN":
+                retVal = "InDesign";
+                break;
+            case "ILST":
+                retVal = "Illustrator";
+                break;
+            case "PHXS":
+            case "PHSH":
+                retVal = "Photoshop";
+                break;
+            case "PPRO":
+                retVal = "Premiere Pro";
+                break;
+        }
+        return retVal;
+    }
 
     var promise = new Promise(function(resolve, reject) {
 
