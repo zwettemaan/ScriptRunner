@@ -20,7 +20,7 @@ RoRu.path.exists = function exists(filepath) {
     return retVal;
 };
 
-RoRu.path.isDir = function isDir(filepath) {
+RoRu.path.isDir = function isDir(folderPath) {
     
     // This casts to a File instead of a Folder if the
     // path references a file
