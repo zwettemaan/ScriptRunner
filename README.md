@@ -23,3 +23,12 @@ or (Win)
   %USERPROFILE%\Documents\Adobe Scripts\Premiere Pro\myscript.jsx
 ```
 to make it appear on the popup menu.
+
+If the scripts don't show up on Mac, make sure the Adobe application has access to the Documents folder in the System Preferences. 
+
+It's happened to me with Photoshop 2021 that the System Preferences were set to 
+disable access to the Documents folder, and that made it seem like the panel was not working.
+
+Go to System Preferences - Security & Privacy - Files and Folders
+
+Find the Adobe app you're using in the list and make sure 'Documents Folder' is ticked.
